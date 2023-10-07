@@ -94,3 +94,13 @@ and then automating the deployment using GitHub Actions.
 5. Create Route Table.
 6. Now create a Load Balancer which will balance the load between two servers.
 7. Finally, within both servers, create a Security Group within their public subnet.
+
+## 1.6. Project Execution Flow
+
+![project-execution-flow.svg](misc/project-execution-flow.svg)
+
+1. First, write the infrastructure as code to create all of these Cloud components.
+2. Deploy it with Terraform.
+3. Code gets stored on GitHub.
+4. GitHub Actions workflow triggers CI/CD.
+5. Code gets deployed to AWS VPC and Components.
