@@ -1,11 +1,11 @@
-<mxfile host="Electron" modified="2023-10-07T17:49:20.268Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="Gn8aC9U3K5NwenD_D3rS" version="22.0.2" type="device">
+<mxfile host="Electron" modified="2023-10-07T17:51:27.229Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="aZhgpEdciJsDVsYm-Lq6" version="22.0.2" type="device">
   <diagram name="Page-1" id="VdRr0r98T9GRrElv7Ly4">
     <mxGraphModel dx="801" dy="1118" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="BT--xsQcx5xekTCIpPdY-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="120" y="640" width="640" height="240" as="geometry" />
+          <mxGeometry x="120" y="640" width="640" height="280" as="geometry" />
         </mxCell>
         <mxCell id="BT--xsQcx5xekTCIpPdY-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=JetBrains Mono;dashed=1;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="880" y="80" width="1120" height="640" as="geometry" />
@@ -117,6 +117,21 @@
         </mxCell>
         <mxCell id="BT--xsQcx5xekTCIpPdY-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="BT--xsQcx5xekTCIpPdY-38" target="BT--xsQcx5xekTCIpPdY-39">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BT--xsQcx5xekTCIpPdY-46" value="Intellij" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="840" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BT--xsQcx5xekTCIpPdY-47" value="Terraform Code" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="265" y="840" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BT--xsQcx5xekTCIpPdY-48" value="GitHub Repository" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="840" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BT--xsQcx5xekTCIpPdY-49" value="GitHub Actions&lt;br&gt;CI/CD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="840" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BT--xsQcx5xekTCIpPdY-50" value="AWS VPC and&lt;br&gt;Components" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="840" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
