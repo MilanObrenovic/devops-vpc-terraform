@@ -23,7 +23,21 @@ and then automating the deployment using GitHub Actions.
 - You also assign a specific IP address range, also known as CIDR (Classless Inter-Domain Range).
 - Within CIDR, you allocate particular resources.
 - Example:
-  - **VPC 1:**
-    - CIDR -> 10.0.0.0/16
-  - **VPC 2:**
-    - CIDR -> 20.0.0.0/16
+	- **VPC 1:**
+		- CIDR -> 10.0.0.0/16
+	- **VPC 2:**
+		- CIDR -> 20.0.0.0/16
+
+## 1.1. Subnets
+
+![subnets.svg](misc/subnets.svg)
+
+- Subnets (sub-net, sub which stands for **division** and net which stands for **network**) is a division of Networks in
+	a VPC.
+- Some applications may not require direct internet access.
+- For example, if we want to create a database, we don't need this database to be accessed publicly, it needs to be in a
+	private subnet.
+- On the contrary, if we have a frontend application, it has to be in the public subnet, so it can be accessed by
+	everyone.
+- This can be done because you are not using the whole VPC, you are only using a **small** IP address range.
+- A VPC belongs to a **Region**, while a Subnet belongs to **Availability Zone**.
