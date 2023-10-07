@@ -41,3 +41,11 @@ and then automating the deployment using GitHub Actions.
 	everyone.
 - This can be done because you are not using the whole VPC, you are only using a **small** IP address range.
 - A VPC belongs to a **Region**, while a Subnet belongs to **Availability Zone**.
+
+## 1.2. Internet Gateway
+
+![internet-gateway.svg](misc/internet-gateway.svg)
+
+- If the resources within the VPC want to have access to the Internet, then they require Internet Gateway.
+- Internet Gateway is directly attached to the VPC.
+- It allows the external traffic to enter the VPC.
