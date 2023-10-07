@@ -49,3 +49,48 @@ and then automating the deployment using GitHub Actions.
 - If the resources within the VPC want to have access to the Internet, then they require Internet Gateway.
 - Internet Gateway is directly attached to the VPC.
 - It allows the external traffic to enter the VPC.
+
+## 1.3. Router
+
+![router.svg](misc/router.svg)
+
+- Routers take care of the routing within the VPC and outside the VPC.
+- It basically allows the network traffic to go in the right direction from a subnet or an Internet Gateway.
+- For example:
+	- Let's say there is some traffic coming through the Internet Gateway.
+	- Because Internet Gateway provided the access, the incoming traffic has now entered the VPC.
+	- But now it doesn't know which application is supposed to route this traffic to.
+	- In order to provide that particular direction to the network traffic, we need to create a **Router**.
+	- With the help of Route Table, it will know exactly where to redirect the traffic to.
+
+## 1.4. EC2 and Load Balancers
+
+![alb.svg](misc/alb.svg)
+
+- EC2 stands for Elastic Compute Cloud, and it is just a logical server.
+- Application Load Balancer (ALB) distributes traffic evenly on each EC2 instance.
+- Basically, it balances the load between servers, which enables availability (servers always up and running instead of
+	having downtime in case of disaster).
+- A Load Balancer has a **listener** and **target group**.
+- **Listener:**
+	- Listener is something where our traffic comes to.
+	- So, whenever the traffic comes to the Load Balancer, it will be distributed to the listeners, which are the
+		components that receive the request and have a set of rules.
+- **Target group:**
+	- Target group is something where the request is being redirected to, and these target groups are then attached to our
+		EC2 instance.
+  - You can have a single target group attached to multiple EC2 instances as well.
+
+## 1.5. Single Tier
+
+![single-tier.svg](misc/single-tier.svg)
+
+- So in what order is all of this supposed to be composed together?
+
+1. Create a VPC.
+2. Create subnets.
+3. Within the subnets, create EC2 instances.
+4. Create Internet Gateway.
+5. Create Route Table.
+6. Now create a Load Balancer which will balance the load between two servers.
+7. Finally, within both servers, create a Security Group within their public subnet.
