@@ -31,5 +31,14 @@ resource "aws_internet_gateway" "igw" {
 }
 
 # Route table
+resource "aws_route_table" "rt" {
+	vpc_id = aws_vpc.my_vpc.id
+
+	route {
+		# Public access
+		cidr_block = "0.0.0.0/0"
+		gateway_id = aws_internet_gateway.igw.id
+	}
+}
 
 # Route table association
