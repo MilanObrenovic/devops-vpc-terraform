@@ -79,7 +79,7 @@ and then automating the deployment using GitHub Actions.
 - **Target group:**
 	- Target group is something where the request is being redirected to, and these target groups are then attached to our
 		EC2 instance.
-  - You can have a single target group attached to multiple EC2 instances as well.
+	- You can have a single target group attached to multiple EC2 instances as well.
 
 ## 1.5. Single Tier
 
@@ -104,3 +104,11 @@ and then automating the deployment using GitHub Actions.
 3. Code gets stored on GitHub.
 4. GitHub Actions workflow triggers CI/CD.
 5. Code gets deployed to AWS VPC and Components.
+
+## 1.7. Terraform Code Structure
+
+- The Terraform structure for this example will be composed out of Modules:
+	- **VPC**
+	- **EC2**
+	- **Security group**
+	- **Load balancer**
