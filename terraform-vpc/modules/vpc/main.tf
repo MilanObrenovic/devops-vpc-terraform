@@ -22,7 +22,13 @@ resource "aws_subnet" "subnets" {
 }
 
 # Internet Gateway
+resource "aws_internet_gateway" "igw" {
+	vpc_id = aws_vpc.my_vpc.id
 
+	tags = {
+		Name = "MyInternetGateway"
+	}
+}
 
 # Route table
 
