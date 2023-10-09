@@ -18,14 +18,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Check Terraform Changes
-        id: terraform-changes
-        run: |
-          if git diff --quiet --exit-code HEAD~1 ./terraform-vpc; then
-            echo "No changes in Terraform code detected. Skipping Terraform."
-            exit 78
-          fi
-
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v2
 
