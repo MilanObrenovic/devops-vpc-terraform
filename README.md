@@ -5,6 +5,14 @@
 This repository demonstrates a basic example of creating a Virtual Private Cloud (VPC) infrastructure using Terraform,
 and then automating the deployment using GitHub Actions.
 
+# 0. Demo
+
+- Two EC2 instances are running.
+- The **Load Balancer** has been configured to load either EC2 (A) or EC2 (B) instance, thereby distributing the load
+	evenly based on which instance is less loaded.
+
+![demo.gif](misc/demo.gif)
+
 # 1. Virtual Private Cloud (VPC)
 
 ![land.svg](misc/land.svg)
@@ -107,7 +115,7 @@ and then automating the deployment using GitHub Actions.
 4. GitHub Actions workflow triggers CI/CD.
 5. Code gets deployed to AWS VPC and Components.
 
-- On every merge into the `main` branch, GitHub Actions execute 
+- On every merge into the `main` branch, GitHub Actions execute
 
 ## 1.7. Terraform Code Structure
 
