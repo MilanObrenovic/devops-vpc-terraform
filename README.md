@@ -115,7 +115,7 @@ and then automating the deployment using GitHub Actions.
 4. GitHub Actions workflow triggers CI/CD.
 5. Code gets deployed to AWS VPC and Components.
 
-- On every merge into the `main` branch, GitHub Actions execute
+- On every merge into the `main` branch, GitHub Actions execute the procedure to apply the Terraform changes.
 
 ## 1.7. Terraform Code Structure
 
@@ -124,3 +124,12 @@ and then automating the deployment using GitHub Actions.
 	- **EC2**
 	- **Security group**
 	- **Load balancer**
+
+## 2. Destroy Infrastructure
+
+- After you're done using this repository, don't forget to destroy the entire infrastructure by running the command
+	locally:
+
+```shell
+terraform destroy --auto-approve
+```
