@@ -1,5 +1,7 @@
 # DevOps + VPC + Terraform
 
+![banner.svg](misc/banner.svg)
+
 This repository demonstrates a basic example of creating a Virtual Private Cloud (VPC) infrastructure using Terraform,
 and then automating the deployment using GitHub Actions.
 
@@ -104,6 +106,8 @@ and then automating the deployment using GitHub Actions.
 3. Code gets stored on GitHub.
 4. GitHub Actions workflow triggers CI/CD.
 5. Code gets deployed to AWS VPC and Components.
+
+- On every merge into the `main` branch, GitHub Actions execute 
 
 ## 1.7. Terraform Code Structure
 
